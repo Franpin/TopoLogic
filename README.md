@@ -52,9 +52,9 @@ We provide results on **[Openlane-V2](https://github.com/OpenDriveLab/OpenLane-V
 |    MapTR     | ResNet-50 |  24   |  × |     8.3       |       0.2        |      43.5       |       5.8        |   20.0   |
 |    MapTR*    | ResNet-50 |  24   | × |     17.7       |       1.1        |      43.5       |       10.4       |   26.0   |
 | TopoNet  | ResNet-50 |  24   | × |   28.6     |     4.1      |    **48.6**     |    20.3     | 35.6 |
-|TopoLogic | ResNet-50 | 24 | × |**29.9**| **18.6**  |47.2|**21.5** |**41.6**|
-|SMERF     |ResNet-50 | 24  |✔ |33.4 | 7.5 |**48.6**|23.4 |39.4| 15.4 |
-|TopoLogic | ResNet-50 | 24 | × |**34.4** |**23.4** |48.3|**24.4**| **45.1**|
+|**TopoLogic** | ResNet-50 | 24 | × |**29.9**| **18.6**  |47.2|**21.5** |**41.6**|
+|SMERF     |ResNet-50 | 24  |√ |33.4 | 7.5 |**48.6**|23.4 |39.4| 15.4 |
+|**TopoLogic** | ResNet-50 | 24 | √ |**34.4** |**23.4** |48.3|**24.4**| **45.1**|
 
 
 > The result of TopoLogic is from this repo.
@@ -147,6 +147,6 @@ If this work is helpful for your research, please consider citing the following 
 ## Related resources
 
 We acknowledge all the open-source contributors for the following projects to make this work possible:
-
+- [TopoNet](https://github.com/OpenDriveLab/TopoNet)
 - [Openlane-V2](https://github.com/OpenDriveLab/OpenLane-V2)
 - [BEVFormer](https://github.com/fundamentalvision/BEVFormer)
