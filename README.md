@@ -13,7 +13,7 @@
 </div>
 
 > - Production from [Institute of Computing Technology, Chinese Academy of Sciences](http://www.ict.ac.cn/). 
-> - Primary contact: [Yanping Fu](https://scholar.google.cz/citations?user=qo7La8cAAAAJ&hl=zh-CN&oi=sra) ( fuyanping23s@ict.ac.com ) or/and [Xinyuan Liu](https://scholar.google.cz/citations?user=eXwizz8AAAAJ&hl=zh-CN&oi=sra).
+> - Primary contact: [Yanping Fu](https://scholar.google.cz/citations?user=qo7La8cAAAAJ&hl=zh-CN&oi=sra) ( fuyanping23s@ict.ac.cn ) or/and [Xinyuan Liu](https://scholar.google.cz/citations?user=eXwizz8AAAAJ&hl=zh-CN&oi=sra).
 
 ---
 
