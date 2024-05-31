@@ -5,7 +5,7 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-2304.05277-479ee2.svg)](https://arxiv.org/abs/2405.14747)
 [![OpenLane-V2](https://img.shields.io/badge/GitHub-OpenLane--V2-blueviolet.svg)](https://github.com/OpenDriveLab/OpenLane-V2)
-[![LICENSE](https://img.shields.io/badge/license-Apache_2.0-blue.svg)](./LICENSE)
+
 
 ![method](figs/pipeline.png "Model Architecture")
 
@@ -33,8 +33,6 @@ TopoLogic is the first to employ an interpretable approach for lane topology rea
   - [Train and Evaluate](#train-and-evaluate)
     - [Train](#train)
     - [Evaluate](#evaluate)
-    - [](#)
-  - [License](#license)
   - [Citation](#citation)
   - [Related resources](#related-resources)
 
@@ -124,11 +122,7 @@ You can set `--show` to visualize the results.
 ./tools/dist_test.sh 8 [work_dir_name] [--show]
 ```
 
-### 
 
-## License
-
-All assets and code are under the [Apache 2.0 license](./LICENSE) unless specified otherwise.
 
 ## Citation
 If this work is helpful for your research, please consider citing the following BibTeX entry.
