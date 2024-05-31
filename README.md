@@ -13,7 +13,7 @@
 </div>
 
 > - Production from [Institute of Computing Technology, Chinese Academy of Sciences](http://www.ict.ac.cn/). 
-> - Primary contact: [Yanping Fu](https://scholar.google.cz/citations?user=qo7La8cAAAAJ&hl=zh-CN&oi=sra) ( litianyu@opendrivelab.com ) or/and [Xinyuan Liu](https://scholar.google.cz/citations?user=eXwizz8AAAAJ&hl=zh-CN&oi=sra).
+> - Primary contact: [Yanping Fu](https://scholar.google.cz/citations?user=qo7La8cAAAAJ&hl=zh-CN&oi=sra) ( fuyanping23s@ict.ac.com ) or/and [Xinyuan Liu](https://scholar.google.cz/citations?user=eXwizz8AAAAJ&hl=zh-CN&oi=sra).
 
 ---
 
@@ -22,13 +22,21 @@ This repository contains the source code of **TopoLogic**, [An Interpretable Pip
 TopoLogic is the first to employ an interpretable approach for lane topology reasoning. TopoLogic fuses the geometric distance of lane line endpoints mapped through a designed function and the similarity of lane query in a high-dimensional semantic space to reason lane topology. Experiments on the large-scale autonomous driving dataset OpenLane-V2 benchmark demonstrate that TopoLogic significantly outperforms existing methods in topology reasoning in complex scenarios.
 
 ## Table of Contents
-- [Main Results](#main-results)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Prepare Dataset](#prepare-dataset)
-- [Train and Evaluate](#train-and-evaluate)
-- [License](#license)
-- [Citation](#citation)
+- [TopoLogic: An Interpretable Pipeline for Lane Topology Reasoning on Driving Scenes](#topologic-an-interpretable-pipeline-for-lane-topology-reasoning-on-driving-scenes)
+  - [Table of Contents](#table-of-contents)
+  - [Main Results](#main-results)
+    - [Results on OpenLane-V2 subset-A val](#results-on-openlane-v2-subset-a-val)
+    - [Results on OpenLane-V2 subset-B val](#results-on-openlane-v2-subset-b-val)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Prepare Dataset](#prepare-dataset)
+  - [Train and Evaluate](#train-and-evaluate)
+    - [Train](#train)
+    - [Evaluate](#evaluate)
+    - [](#)
+  - [License](#license)
+  - [Citation](#citation)
+  - [Related resources](#related-resources)
 
 
 ## Main Results
@@ -37,35 +45,33 @@ TopoLogic is the first to employ an interpretable approach for lane topology rea
 
 We provide results on **[Openlane-V2](https://github.com/OpenDriveLab/OpenLane-V2) subset-A val** set.
 
-|    Method    | Backbone  | Epoch | DET<sub>l</sub> | TOP<sub>ll</sub> | DET<sub>t</sub> | TOP<sub>lt</sub> |   OLS    |
-| :----------: | :-------: | :---: | :-------------: | :--------------: | :-------------: | :--------------: | :------: |
-|     STSU     | ResNet-50 |  24   |      12.7       |       0.5        |      43.0       |       15.1       |   25.4   |
-| VectorMapNet | ResNet-50 |  24   |      11.1       |       0.4        |      41.7       |       6.2        |   20.8   |
-|    MapTR     | ResNet-50 |  24   |       8.3       |       0.2        |      43.5       |       5.8        |   20.0   |
-|    MapTR*    | ResNet-50 |  24   |      17.7       |       1.1        |      43.5       |       10.4       |   26.0   |
-| TopoNet  | ResNet-50 |  24   |    **28.6**     |     **4.1**      |    **48.6**     |     **20.3**     | **35.6** |
+|    Method    | Backbone | Epoch |SDMap | DET<sub>l</sub> | TOP<sub>ll</sub> | DET<sub>t</sub> | TOP<sub>lt</sub> |   OLS    |
+| :----------: |----| :-------: | :---: | :-------------: | :--------------: | :-------------: | :--------------: | :------: |
+|     STSU     | ResNet-50 |  24   |  × |     12.7       |       0.5        |      43.0       |       15.1       |   25.4   |
+| VectorMapNet | ResNet-50 |  24   |  × |    11.1       |       0.4        |      41.7       |       6.2        |   20.8   |
+|    MapTR     | ResNet-50 |  24   |  × |     8.3       |       0.2        |      43.5       |       5.8        |   20.0   |
+|    MapTR*    | ResNet-50 |  24   | × |     17.7       |       1.1        |      43.5       |       10.4       |   26.0   |
+| TopoNet  | ResNet-50 |  24   | × |   28.6     |     4.1      |    **48.6**     |    20.3     | 35.6 |
+|TopoLogic | ResNet-50 | 24 | × |**29.9**| **18.6**  |47.2|**21.5** |**41.6**|
+|SMERF     |ResNet-50 | 24  |✔ |33.4 | 7.5 |**48.6**|23.4 |39.4| 15.4 |
+|TopoLogic | ResNet-50 | 24 | × |**34.4** |**23.4** |48.3|**24.4**| **45.1**|
 
 
-
-> *: evaluation based on matching results on Chamfer distance.  
-> The result of TopoNet is from this repo.
+> The result of TopoLogic is from this repo.
 
 
 ### Results on OpenLane-V2 subset-B val
 
 |    Method    | Backbone  | Epoch | DET<sub>l</sub> | TOP<sub>ll</sub> | DET<sub>t</sub> | TOP<sub>lt</sub> |   OLS    |
 | :----------: | :-------: | :---: | :-------------: | :--------------: | :-------------: | :--------------: | :------: |
-| **TopoNet**  | ResNet-50 |  24   |    **24.4**     |     **6.7**      |    **52.6**     |     **16.7**     | **36.0** |
+| **TopoLogic**  | ResNet-50 |  24   |  **25.9** |**15.1**|**54.7** | **15.1**| **39.6**| **21.6** |
 
-> The result is based on the updated `v1.1` OpenLane-V2 devkit and metrics.  
-> The result of TopoNet is from this repo.
+> The result is based on the updated `v2.1.0` OpenLane-V2 devkit and metrics.  
+> The result of TopoLogic is from this repo.
 
-## Model Zoo
-
-| Model | Dataset | Backbone | Epoch |  OLS  | Memory | Config | Download |
-| :---: | :-----: | :------: | :---: | :---: | :----: | :----: | :------: |
-| TopoNet-R50 | subset-A | ResNet-50 | 24 | 39.8 | 12.3G | [config](projects/configs/toponet_r50_8x1_24e_olv2_subset_A.py) | [ckpt](https://huggingface.co/OpenDriveLab/toponet_r50_8x1_24e_olv2_subset_A/resolve/main/toponet_r50_8x1_24e_olv2_subset_A.pth) / [log](https://huggingface.co/OpenDriveLab/toponet_r50_8x1_24e_olv2_subset_A/resolve/main/20231017_113808.log) |
-| TopoNet-R50 | subset-B | ResNet-50 | 24 | 36.0 | 8.2G  | [config](projects/configs/toponet_r50_8x1_24e_olv2_subset_B.py) | [ckpt](https://huggingface.co/OpenDriveLab/toponet_r50_8x1_24e_olv2_subset_B/resolve/main/toponet_r50_8x1_24e_olv2_subset_B.pth) / [log](https://huggingface.co/OpenDriveLab/toponet_r50_8x1_24e_olv2_subset_B/resolve/main/20231127_121131.log) |
+|    Method    | Backbone  | Epoch | DET<sub>l</sub> | TOP<sub>ll</sub> | DET<sub>t</sub> | TOP<sub>lt</sub> |   OLS    |
+| :----------: | :-------: | :---: | :-------------: | :--------------: | :-------------: | :--------------: | :------: |
+| **TopoLogic**  | ResNet-50 |  24   |   **29.9** |**23.9** |**47.2** |**25.4** |**44.1**|
 
 
 ## Prerequisites
@@ -118,6 +124,8 @@ You can set `--show` to visualize the results.
 ./tools/dist_test.sh 8 [work_dir_name] [--show]
 ```
 
+### 
+
 ## License
 
 All assets and code are under the [Apache 2.0 license](./LICENSE) unless specified otherwise.
@@ -136,7 +144,6 @@ If this work is helpful for your research, please consider citing the following 
 }
 
 ```
-
 ## Related resources
 
 We acknowledge all the open-source contributors for the following projects to make this work possible:
