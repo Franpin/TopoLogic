@@ -1,6 +1,6 @@
 <div align="center">
 
-# TopoLogic: An Interpretable Pipeline for Lane Topology Reasoning on Driving Scenes
+# [NeurIPS 2024] TopoLogic: An Interpretable Pipeline for Lane Topology Reasoning on Driving Scenes
 
 
 [![arXiv](https://img.shields.io/badge/arXiv-2304.05277-479ee2.svg)](https://arxiv.org/abs/2405.14747)
@@ -13,14 +13,21 @@
 </div>
 
 > - Production from [Institute of Computing Technology, Chinese Academy of Sciences](http://www.ict.ac.cn/). 
-> - Primary contact: [Yanping Fu](https://scholar.google.cz/citations?user=qo7La8cAAAAJ&hl=zh-CN&oi=sra) ( fuyanping23s@ict.ac.cn ) or/and [Xinyuan Liu](https://scholar.google.cz/citations?user=eXwizz8AAAAJ&hl=zh-CN&oi=sra).
+> - Primary contact: **Yanping Fu** ( fuyanping23s@ict.ac.cn ) or/and [Xinyuan Liu](https://scholar.google.cz/citations?user=eXwizz8AAAAJ&hl=zh-CN&oi=sra).
 
+
+TL;DR
 ---
-
 This repository contains the source code of **TopoLogic**, [An Interpretable Pipeline for Lane Topology Reasoning on Driving Scenes](https://arxiv.org/abs/2405.14747).
 
 TopoLogic is the first to employ an interpretable approach for lane topology reasoning. TopoLogic fuses **the geometric distance of lane line endpoints** mapped through a designed function and **the similarity of lane query in a high-dimensional semantic space** to reason lane topology. Experiments on the large-scale autonomous driving dataset OpenLane-V2 benchmark demonstrate that TopoLogic significantly outperforms existing methods in topology reasoning in complex scenarios.
 
+
+Updates
+--- 
+- [2024.10.6] Code and Model are released.
+- [2024.9.26] TopoLogic is accepted by NeurIPS 2024.
+- [2024.5.23] TopoLogic paper is released at [arXiv](https://arxiv.org/abs/2405.14747)
 ## Table of Contents
 - [TopoLogic: An Interpretable Pipeline for Lane Topology Reasoning on Driving Scenes](#topologic-an-interpretable-pipeline-for-lane-topology-reasoning-on-driving-scenes)
   - [Table of Contents](#table-of-contents)
@@ -36,9 +43,15 @@ TopoLogic is the first to employ an interpretable approach for lane topology rea
   - [Citation](#citation)
   - [Related resources](#related-resources)
 
+## Model Zoo
+
+
+|    Method    | Backbone  | Epoch | Dataset | OLS |Version | Config | Download |  
+| :----------: | :-------: | :---: | :-------------: | :--------------: | :-------------: | :--------------: | :------: |
+| **TopoLogic**  | ResNet-50 |  24   |   subset-A | 44.1 | OpenLane-V2-v2.1.0 | [config](/projects/configs/topologic_r50_8x1_24e_olv2_subset_A.py) | [ckpt](https://huggingface.co/Franpin/topologic/resolve/main/topologic_r50_8x1_24e_olv2_subset_A.pth?download=true) / [log](https://huggingface.co/Franpin/topologic/resolve/main/topologic_r50_8x1_24e_olv2_subset_A.json?download=true) |
 
 ## Main Results
-
+> The result is based on the `v1.0.0` OpenLane-V2 devkit and metrics. 
 ### Results on OpenLane-V2 subset-A val
 
 We provide results on **[Openlane-V2](https://github.com/OpenDriveLab/OpenLane-V2) subset-A val** set.
