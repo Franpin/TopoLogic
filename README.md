@@ -31,6 +31,7 @@ Updates
 ## Table of Contents
 - [TopoLogic: An Interpretable Pipeline for Lane Topology Reasoning on Driving Scenes](#topologic-an-interpretable-pipeline-for-lane-topology-reasoning-on-driving-scenes)
   - [Table of Contents](#table-of-contents)
+  - [Model Zoo](#model-zoo)
   - [Main Results](#main-results)
     - [Results on OpenLane-V2 subset-A val](#results-on-openlane-v2-subset-a-val)
     - [Results on OpenLane-V2 subset-B val](#results-on-openlane-v2-subset-b-val)
