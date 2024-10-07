@@ -119,7 +119,7 @@ Following [OpenLane-V2 repo](https://github.com/OpenDriveLab/OpenLane-V2/blob/v1
 
 ### Train
 
-We recommend using 8 GPUs for training. If a different number of GPUs is utilized, you can enhance performance by configuring the `--autoscale-lr` option. The training logs will be saved to `work_dirs/toponet`.
+We recommend using 8 GPUs for training. If a different number of GPUs is utilized, you can enhance performance by configuring the `--autoscale-lr` option. The training logs will be saved to `work_dirs/[work_dir_name]`.
 
 ```bash
 cd TopoLogic
