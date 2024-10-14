@@ -4,3 +4,7 @@ scipy==1.8.0
 ortools==9.2.9972
 setuptools==59.5.0
 openlanev2==2.1.0
+mmcv-full==1.5.2 -f https://download.openmmlab.com/mmcv/dist/cu111/torch1.9.0/index.html
+mmdet==2.26.0
+mmsegmentation==0.29.1
+mmdet3d==1.0.0rc6
