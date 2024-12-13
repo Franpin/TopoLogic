@@ -152,6 +152,19 @@ If this work is helpful for your research, please consider citing the following 
 }
 
 ```
+Similar work
+@INPROCEEDINGS{10588515,
+  author={Jia, Peijin and Wen, Tuopu and Luo, Ziang and Fu, Zheng and Liao, Jiaqi and Chen, Huixian and Jiang, Kun and Yang, Mengmeng and Yang, Diange},
+  booktitle={2024 IEEE Intelligent Vehicles Symposium (IV)}, 
+  title={LaneDAG: Automatic HD Map Topology Generator Based on Geometry and Attention Fusion Mechanism}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1015-1021},
+  keywords={Point cloud compression;Visualization;Statistical analysis;Navigation;Intelligent vehicles;Roads;Feature extraction},
+  doi={10.1109/IV55156.2024.10588515}}
+
+
 ## Related resources
 
 We acknowledge all the open-source contributors for the following projects to make this work possible:
