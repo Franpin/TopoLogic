@@ -3,9 +3,8 @@
 # [NeurIPS 2024] TopoLogic: An Interpretable Pipeline for Lane Topology Reasoning on Driving Scenes
 
 
-[![arXiv](https://img.shields.io/badge/arXiv-2304.05277-479ee2.svg)](https://arxiv.org/abs/2405.14747)
-[![OpenLane-V2](https://img.shields.io/badge/GitHub-OpenLane--V2-blueviolet.svg)](https://github.com/OpenDriveLab/OpenLane-V2)
-
+[![NIPS](https://img.shields.io/badge/NeurIPS-2405.14747-479ee2.svg)](https://papers.nips.cc/paper_files/paper/2024/file/7116cda41d75d580bae15d9e484a8466-Paper-Conference.pdf)
+[![OpenLane-V2](https://img.shields.io/badge/GitHub-TopoLogic-blueviolet.svg)](https://github.com/Franpin/TopoLogic)
 
 ![method](figs/pipeline.png "Model Architecture")
 
@@ -142,28 +141,17 @@ You can set `--show` to visualize the results.
 If this work is helpful for your research, please consider citing the following BibTeX entry.
 
 ``` bibtex
-@misc{fu2024topologic,
-      title={TopoLogic: An Interpretable Pipeline for Lane Topology Reasoning on Driving Scenes}, 
-      author={Yanping Fu and Wenbin Liao and Xinyuan Liu and Hang xu and Yike Ma and Feng Dai and Yucheng Zhang},
-      year={2024},
-      eprint={2405.14747},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@inproceedings{fut2024topologic,
+ author = {Fu, Yanping and Liao, Wenbin and Liu, Xinyuan and Xu, Hang and Ma, Yike and Zhang, Yucheng and Dai, Feng},
+ booktitle = {Advances in Neural Information Processing Systems},
+ pages = {61658--61676},
+ publisher = {Curran Associates, Inc.},
+ title = {TopoLogic: An Interpretable  Pipeline for Lane Topology Reasoning on Driving Scenes},
+ volume = {37},
+ year = {2024}
 }
 
 
-
-Similar work
-@INPROCEEDINGS{10588515,
-  author={Jia, Peijin and Wen, Tuopu and Luo, Ziang and Fu, Zheng and Liao, Jiaqi and Chen, Huixian and Jiang, Kun and Yang, Mengmeng and Yang, Diange},
-  booktitle={2024 IEEE Intelligent Vehicles Symposium (IV)}, 
-  title={LaneDAG: Automatic HD Map Topology Generator Based on Geometry and Attention Fusion Mechanism}, 
-  year={2024},
-  volume={},
-  number={},
-  pages={1015-1021},
-  keywords={Point cloud compression;Visualization;Statistical analysis;Navigation;Intelligent vehicles;Roads;Feature extraction},
-  doi={10.1109/IV55156.2024.10588515}}
 ```
 
 
