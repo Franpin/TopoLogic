@@ -145,7 +145,6 @@ If this work is helpful for your research, please consider citing the following 
  author = {Fu, Yanping and Liao, Wenbin and Liu, Xinyuan and Xu, Hang and Ma, Yike and Zhang, Yucheng and Dai, Feng},
  booktitle = {Advances in Neural Information Processing Systems},
  pages = {61658--61676},
- publisher = {Curran Associates, Inc.},
  title = {TopoLogic: An Interpretable  Pipeline for Lane Topology Reasoning on Driving Scenes},
  volume = {37},
  year = {2024}
