@@ -141,7 +141,7 @@ You can set `--show` to visualize the results.
 If this work is helpful for your research, please consider citing the following BibTeX entry.
 
 ``` bibtex
-@inproceedings{fut2024topologic,
+@inproceedings{fu2024topologic,
  author = {Fu, Yanping and Liao, Wenbin and Liu, Xinyuan and Xu, Hang and Ma, Yike and Zhang, Yucheng and Dai, Feng},
  booktitle = {Advances in Neural Information Processing Systems},
  pages = {61658--61676},
