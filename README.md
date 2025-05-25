@@ -1,10 +1,9 @@
 <div align="center">
 
 # [NeurIPS 2024] TopoLogic: An Interpretable Pipeline for Lane Topology Reasoning on Driving Scenes
-
-
+## 🔥New Topology Reasoning work [TopoPoint](https://github.com/Franpin/TopoPoint) is released.
 [![NIPS](https://img.shields.io/badge/NeurIPS-2405.14747-479ee2.svg)](https://papers.nips.cc/paper_files/paper/2024/file/7116cda41d75d580bae15d9e484a8466-Paper-Conference.pdf)
-[![OpenLane-V2](https://img.shields.io/badge/GitHub-TopoLogic-blueviolet.svg)](https://github.com/Franpin/TopoLogic)
+[![TopoLogic](https://img.shields.io/badge/GitHub-TopoLogic-blueviolet.svg)](https://github.com/Franpin/TopoLogic)
 
 ![method](figs/pipeline.png "Model Architecture")
 
@@ -17,16 +16,17 @@
 
 TL;DR
 ---
-This repository contains the source code of **TopoLogic**, [An Interpretable Pipeline for Lane Topology Reasoning on Driving Scenes](https://arxiv.org/abs/2405.14747).
+This repository contains the source code of **TopoLogic**, [An Interpretable Pipeline for Lane Topology Reasoning on Driving Scenes](https://papers.nips.cc/paper_files/paper/2024/file/7116cda41d75d580bae15d9e484a8466-Paper-Conference.pdf).
 
 TopoLogic is the first to employ an interpretable approach for lane topology reasoning. TopoLogic fuses **the geometric distance of lane line endpoints** mapped through a designed function and **the similarity of lane query in a high-dimensional semantic space** to reason lane topology. Experiments on the large-scale autonomous driving dataset OpenLane-V2 benchmark demonstrate that TopoLogic significantly outperforms existing methods in topology reasoning in complex scenarios.
 
 
 Updates
 --- 
+- [2025.5.26] 🔥New work [TopoPoint](https://github.com/Franpin/TopoPoint) is released.
 - [2024.10.6] Code and Model are released.
 - [2024.9.26] TopoLogic is accepted by NeurIPS 2024.
-- [2024.5.23] TopoLogic paper is released at [arXiv](https://arxiv.org/abs/2405.14747)
+- [2024.5.23] TopoLogic paper is released at [arXiv](https://arxiv.org/abs/2405.14747).
 ## Table of Contents
 - [TopoLogic: An Interpretable Pipeline for Lane Topology Reasoning on Driving Scenes](#topologic-an-interpretable-pipeline-for-lane-topology-reasoning-on-driving-scenes)
   - [Table of Contents](#table-of-contents)
@@ -150,6 +150,16 @@ If this work is helpful for your research, please consider citing the following 
  year = {2024}
 }
 
+@misc{fu2025topopoint,
+      title={TopoPoint: Enhance Topology Reasoning via Endpoint Detection in Autonomous Driving}, 
+      author={Yanping Fu and Xinyuan Liu and Tianyu Li and Yike Ma and Yucheng Zhang and Feng Dai},
+      year={2025},
+      eprint={2505.17771},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2505.17771}, 
+}
+
 
 ```
 
@@ -158,6 +168,7 @@ If this work is helpful for your research, please consider citing the following 
 ## Related resources
 
 We acknowledge all the open-source contributors for the following projects to make this work possible:
+- [TopoPoint](https://github.com/Franpin/TopoPoint)
 - [TopoNet](https://github.com/OpenDriveLab/TopoNet)
 - [Openlane-V2](https://github.com/OpenDriveLab/OpenLane-V2)
 - [BEVFormer](https://github.com/fundamentalvision/BEVFormer)
